@@ -32,7 +32,7 @@ docker run -d -p 8000:8000 yolov8-segmentation
 
 Access the FastAPI server at http://localhost:8000/ and test the /segmentation endpoint using your preferred HTTP client.
 
-##Customization
+## Customization
 
 This is just an general example please adjust the YOLOv8 model and segmentation logic in the app.py file to fit your specific requirements.
 Modify the Dockerfile to add any additional dependencies or configurations needed for your project.
