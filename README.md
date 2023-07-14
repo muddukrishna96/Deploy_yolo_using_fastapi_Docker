@@ -37,4 +37,34 @@ Access the FastAPI server at http://localhost:8000/ and test the /segmentation e
 This is just an general example please adjust the YOLOv8 model and segmentation logic in the app.py file to fit your specific requirements.
 Modify the Dockerfile to add any additional dependencies or configurations needed for your project.
 
+## process
 
+To deploy a YOLOv8-trained segmentation model using FastAPI and Docker, you will typically need the following code files:
+
+app.py: This file contains the code for the FastAPI application. It includes the API routes, handling the image segmentation request, and returning the segmented output.
+
+Dockerfile: This file is used to build the Docker image for your application. It specifies the base image, installs dependencies, and sets up the container environment.
+
+requirements.txt: This file lists the Python dependencies required for your FastAPI application. It typically includes FastAPI and any additional libraries needed for the YOLOv8 model and image processing.
+
+Additionally, you might have other files related to your YOLOv8 model, such as:
+
+Model weights: The trained YOLOv8 model weights file.
+
+Model configuration: The configuration file for the YOLOv8 model.
+
+Class labels: A file containing the class labels used by the YOLOv8 model.
+
+Make sure to organize these files in a logical directory structure, for example:
+
+├── app.py
+├── Dockerfile
+├── requirements.txt
+├── models
+│   ├── yolov8 weights
+│   ├── yolov8 cfg
+│   └── ...
+└── ...
+
+Please note that the specific file names and structure may vary depending on your project and how you have organized your code and model files. 
+Adapt the file names and paths in the code and instructions accordingly.
